@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Coding Train Extension",
+    "name": "Coding Train Extension 2",
     "version": "1.0.0",
     "content_scripts": [
         {
@@ -9,5 +9,16 @@
             ],
             "js": ["content.js"]
         }
-    ]
+    ],
+    "action": {
+        "default_title": "Click to show an alert"
+      },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "icons": {
+        "16": "avatar.png"
+    }
+
 }
